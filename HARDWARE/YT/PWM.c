@@ -71,7 +71,7 @@ void HAL_TIM_PWM_MspInit(TIM_HandleTypeDef *htim)
 //        __HAL_AFIO_REMAP_TIM3_PARTIAL();        //TIM3通道引脚部分重映射使能
         __HAL_RCC_GPIOA_CLK_ENABLE();            //开启GPIOA时钟
         
-        GPIO_Initure.Pin=GPIO_PIN_6 | GPIO_PIN_7; //PB6|7
+        GPIO_Initure.Pin=GPIO_PIN_6 | GPIO_PIN_7; //PA6|7
         GPIO_Initure.Mode=GPIO_MODE_AF_PP;      //复用推挽输出
         GPIO_Initure.Pull=GPIO_PULLUP;          //上拉
         GPIO_Initure.Speed=GPIO_SPEED_HIGH;     //高速
